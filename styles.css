@@ -1,11 +1,65 @@
 body{
-    background-color: greenyellow;
+    background-color: peachpuff;
 }
 h1{
     color:blue
 }
 p{
-    font-size: 25px;
+    font-size: 20px;
     font-family:'Times New Roman', Times, serif;
     color: rgb(209, 122, 15);
 }
+table { 
+    border: 1px solid black; /* gives lines and colour to border and column lines. */
+    border-collapse: collapse; /*makes double border lined to just one. */
+/*To change the space between table cells, use the CSS border-spacing property on the table element */
+    border-spacing: 10px;
+}
+th, td {
+    border: 1px solid black;
+    border-radius: 10px; /*gives rounded boxes */
+    border-style: dotted; /*give style to boxes*/
+    border-color: blue; /*gives color to boxes */
+   /*To add padding on table cells, use the CSS padding property */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+/*For zebra-striped tables, use the nth-child() selector 
+and add a background-color 
+to all even (or odd) table rows*/
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  /* Hover effect */
+  tr:hover 
+  {
+    background-color: #D6EEEE;
+}
+  .mycontainer 
+  {
+    display: flex; /*flexbox*/
+  }
+  .mycontainer > div 
+  {
+  width:33%;  
+  }
+  .grid-container 
+  {
+    display: grid; /*grid layout*/
+    grid-template-columns: 33% 33% 33%;
+  }
+  .non-grid-content {
+    display: block; /* Reset display property to default block */
+}
+  .note
+{
+    font-size: 120%;
+    color: red;
+}
+  
